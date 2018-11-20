@@ -1,3 +1,51 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Exo-Medium-Italic';
+    src: url('../../fonts/Exo-MediumItalic.eot');
+    src: url('../../fonts/Exo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Exo-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/Exo-MediumItalic.woff') format('woff'),
+        url('../../fonts/Exo-MediumItalic.ttf') format('truetype'),
+        url('../../fonts/Exo-MediumItalic.svg#Exo-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../fonts/Exo-Medium.eot');
+    src: url('../../fonts/Exo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Exo-Medium.woff2') format('woff2'),
+        url('../../fonts/Exo-Medium.woff') format('woff'),
+        url('../../fonts/Exo-Medium.ttf') format('truetype'),
+        url('../../fonts/Exo-Medium.svg#Exo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../fonts/Exo-Light.eot');
+    src: url('../../fonts/Exo-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Exo-Light.woff2') format('woff2'),
+        url('../../fonts/Exo-Light.woff') format('woff'),
+        url('../../fonts/Exo-Light.ttf') format('truetype'),
+        url('../../fonts/Exo-Light.svg#Exo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../fonts/Exo-LightItalic.eot');
+    src: url('../../fonts/Exo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Exo-LightItalic.woff2') format('woff2'),
+        url('../../fonts/Exo-LightItalic.woff') format('woff'),
+        url('../../fonts/Exo-LightItalic.ttf') format('truetype'),
+        url('../../fonts/Exo-LightItalic.svg#Exo-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
