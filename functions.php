@@ -69,16 +69,18 @@ function qod_scripts() {
 
 	//TODO add a custom js file
 
-	// wp_enqueue_script( 'quotesondev-custom', get_template_directory_uri() . '/build/js/custom.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'quotesondev-custom', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '', true );
 
 
 	//TODO try to add a localised script
 
-	// wp_localize_script( 'quotesondev-custom', 'quotesondev_vars', array(
-	// 	'rest_url' => esc_url_raw( rest_url() ),
-	// 	'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-	// 	'post_id' => get_the_ID()
-	// ) );
+	wp_localize_script( 'quotesondev-custom', 'quotesondev_vars', array(
+		'rest_url' => esc_url_raw( rest_url() ),
+		'home_url' => esc_url_raw( home_url() ),
+		'nonce' => wp_create_nonce( 'wp_rest' ),
+		'success' => 'Thanks, your quote submission was recieved!',
+		'failure' => 'Your submission could not be processed',
+	) );
 
 
 }

@@ -9,9 +9,9 @@
     button {
         text-shadow: none;
         box-shadow: none;
-        color: #090;;
+        color: $button;
         background: $background;
-        border: 1px solid #090;;
+        border: 1px solid $button;
         font-family: 'Exo-Medium';
         font-size: 16px;
         padding: 12px 40px;

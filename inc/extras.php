@@ -40,3 +40,24 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 	remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
+
+//filter the post archives including the default blog loop
+
+function qod_modify_archives( $query ){
+
+    if( is_home() || is_single() && !is_admin()  && $query->is_main_query() ){
+        $query->set( 'orderby', 'rand' );
+        $query->set( 'posts_per_page', 1 );
+        $query->set( 'order', 'ASC' );
+    }
+
+    if( 
+        ( is_archive() ) 
+        &&  !is_admin() && $query->is_main_query()
+        ) {
+            $query->set( 'posts_per_page', 5 );
+        }
+
+}
+
+add_action( 'pre_get_posts', 'qod_modify_archives' );
