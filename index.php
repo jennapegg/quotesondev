@@ -10,28 +10,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php 
+		if ( have_posts() ) :
+			while( have_posts() ): the_post();
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+			get_template_part( 'template-parts/content' );
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			endwhile;
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+			else:
+				get_template_part( 'template-parts/content', 'none' );
 
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		endif; 
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

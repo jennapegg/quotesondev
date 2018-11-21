@@ -228,21 +228,21 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-Medium';
   src: url("../../fonts/Exo-Medium.eot");
   src: url("../../fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Medium.woff2") format("woff2"), url("../../fonts/Exo-Medium.woff") format("woff"), url("../../fonts/Exo-Medium.ttf") format("truetype"), url("../../fonts/Exo-Medium.svg#Exo-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-Light';
   src: url("../../fonts/Exo-Light.eot");
   src: url("../../fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Light.woff2") format("woff2"), url("../../fonts/Exo-Light.woff") format("woff"), url("../../fonts/Exo-Light.ttf") format("truetype"), url("../../fonts/Exo-Light.svg#Exo-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-Light-Italic';
   src: url("../../fonts/Exo-LightItalic.eot");
   src: url("../../fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-LightItalic.woff2") format("woff2"), url("../../fonts/Exo-LightItalic.woff") format("woff"), url("../../fonts/Exo-LightItalic.ttf") format("truetype"), url("../../fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
   font-weight: 300;
@@ -486,9 +486,11 @@ a {
     text-decoration: none; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation ul {
   display: block; }
+
+.menu-toggle {
+  display: none; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -615,11 +617,60 @@ iframe,
 object {
   max-width: 100%; }
 
+.site-header {
+  margin-top: 50px; }
+  .site-header img {
+    width: 300px; }
+
+.site-main button {
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #090;
+  background: #222222;
+  border: 1px solid #090;
+  font-family: 'Exo-Medium';
+  font-size: 16px;
+  padding: 12px 40px; }
+
+.site-content {
+  width: 400px;
+  font-family: 'Exo-Light';
+  margin-bottom: 90px; }
+  .site-content p {
+    font-size: 20px; }
+  .site-content .entry-content p {
+    padding: 0;
+    margin: 0; }
+  .site-content .entry-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-content .entry-meta a {
+      color: #00cc00;
+      text-decoration: none;
+      font-family: 'Exo-Light-Italic'; }
+
+.site-info {
+  font-family: 'Exo-Light';
+  margin-bottom: 75px; }
+  .site-info .main-navigation {
+    margin-bottom: 15px; }
+    .site-info .main-navigation a {
+      border-right: 1px solid white;
+      line-height: 1rem;
+      padding-right: 10px; }
+  .site-info a {
+    color: #00cc00;
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 body {
-  font-family: 'Exo-Medium-Italic'; }
+  background: #222222;
+  color: white;
+  margin-left: 10px; }
 
 /* All Archives Page */
 /* Submit a Quote Page */

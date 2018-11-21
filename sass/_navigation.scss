@@ -96,9 +96,13 @@ a {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+
+.main-navigation ul {
 	display: block;
+}
+
+.menu-toggle {
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
