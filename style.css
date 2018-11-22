@@ -642,14 +642,12 @@ object {
   .site-content .entry-content p {
     padding: 0;
     margin: 0; }
-  .site-content .entry-meta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-content .entry-meta a {
-      color: #00cc00;
-      text-decoration: none;
-      font-family: 'Exo-Light-Italic'; }
+  .site-content .entry-meta p {
+    display: inline-block; }
+  .site-content .entry-meta a {
+    color: #00cc00;
+    text-decoration: none;
+    font-family: 'Exo-Light-Italic'; }
 
 .site-info {
   font-family: 'Exo-Light';
@@ -660,9 +658,39 @@ object {
       border-right: 1px solid white;
       line-height: 1rem;
       padding-right: 10px; }
+      .site-info .main-navigation a:last-of-type {
+        border-right: none; }
   .site-info a {
     color: #00cc00;
     text-decoration: none; }
+
+.single .nav-links {
+  display: none; }
+
+.post-archives ul,
+.category-archives ul,
+.tag-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .post-archives ul li,
+  .category-archives ul li,
+  .tag-archives ul li {
+    padding-right: 20px;
+    line-height: 2rem; }
+    .post-archives ul li a,
+    .category-archives ul li a,
+    .tag-archives ul li a {
+      color: #00cc00;
+      text-decoration: none; }
+
+h1 {
+  margin: 40px 0; }
 
 /*--------------------------------------------------------------
 # Page Templates

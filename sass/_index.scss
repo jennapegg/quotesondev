@@ -5,6 +5,7 @@
     }
 }
 
+
 .site-main {
     button {
         text-shadow: none;
@@ -36,11 +37,14 @@
         
     }
     .entry-meta {
-        display: flex;
-     a {
+        p {
+            display: inline-block;
+        }
+        a {
         color: $brand;
         text-decoration: none;
         font-family: 'Exo-Light-Italic';
+        // font-size: 2rem;
     }   
     }
     
@@ -54,8 +58,8 @@
             border-right: 1px solid white;
             line-height: 1rem;
             padding-right: 10px;
-            &:last-child {
-                // border-right: none;
+            &:last-of-type {
+                border-right: none;
             }
         }
 

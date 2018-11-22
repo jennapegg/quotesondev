@@ -36,10 +36,12 @@
                    `, &nbsp; <a href="${data[0]._qod_quote_source_url}">${data[0]._qod_quote_source}</a>`
                     );
 
-                    } else{
+                    } else if(data[0]._qod_quote_source > 0){
                 $source.append(
-                   data[0]._qod_quote_source
-                    );}
+                   `, &nbsp; ${data[0]._qod_quote_source}`
+                    );} else {
+                        $source.append('');
+                    }
             })//ajax request .done
 
             .fail(function(){
