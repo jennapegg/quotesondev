@@ -8,20 +8,12 @@
 
 .site-main {
     button {
-        text-shadow: none;
-        box-shadow: none;
-        color: $button;
-        background: $background;
-        border: 1px solid $button;
-        font-family: 'Exo-Medium';
-        font-size: 16px;
-        padding: 12px 40px;
-
+        @include qod-button;
         }
     }
 
 .site-content {
-    width: 350px;
+    width: 90%;
     font-family: 'Exo-Light';
     margin-bottom: 90px;
     

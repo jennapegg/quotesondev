@@ -4,3 +4,14 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin qod-button {
+	text-shadow: none;
+        box-shadow: none;
+        color: $button;
+        background: $background;
+        border: 1px solid $button;
+        font-family: 'Exo-Medium';
+        font-size: 16px;
+        padding: 12px 40px;
+}

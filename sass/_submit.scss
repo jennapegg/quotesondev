@@ -1,0 +1,25 @@
+.quote-submission-wrapper {
+    width: 400px;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100px;
+        &:nth-of-type(2) {
+            height: 150px;
+        }
+        input, 
+        textarea {
+            background: $background;
+            border: 1px solid $brand;
+            width: 250px;
+        }
+        textarea{
+            width: 375px;
+        }
+}
+    input[type='submit']{
+        @include qod-button;
+        margin-top: 10px;
+    }
+}

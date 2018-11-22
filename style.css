@@ -634,7 +634,7 @@ object {
   padding: 12px 40px; }
 
 .site-content {
-  width: 350px;
+  width: 90%;
   font-family: 'Exo-Light';
   margin-bottom: 90px; }
   .site-content p {
@@ -691,6 +691,40 @@ object {
 
 h1 {
   margin: 40px 0; }
+
+.quote-submission-wrapper {
+  width: 400px; }
+  .quote-submission-wrapper div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 100px; }
+    .quote-submission-wrapper div:nth-of-type(2) {
+      height: 150px; }
+    .quote-submission-wrapper div input,
+    .quote-submission-wrapper div textarea {
+      background: #222222;
+      border: 1px solid #00cc00;
+      width: 250px; }
+    .quote-submission-wrapper div textarea {
+      width: 375px; }
+  .quote-submission-wrapper input[type='submit'] {
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #090;
+    background: #222222;
+    border: 1px solid #090;
+    font-family: 'Exo-Medium';
+    font-size: 16px;
+    padding: 12px 40px;
+    margin-top: 10px; }
 
 /*--------------------------------------------------------------
 # Page Templates
