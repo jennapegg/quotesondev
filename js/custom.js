@@ -68,19 +68,19 @@
 
         function postQuote() {
             //get values of your form input
-            const quoteTitle = $('#quote-author').val();
-            const quoteContent = $('#quote-content').val();
-            const quoteSource = $('#quote-source').val();
-            const quoteURL = $('#quote-source-url').val();
+            const $quoteTitle = $('#quote-author').val();
+            const $quoteContent = $('#quote-content').val();
+            const $quoteSource = $('#quote-source').val();
+            const $quoteURL = $('#quote-source-url').val();
             
             $.ajax({
                 url: quotesondev_vars.rest_url + 'wp/v2/posts',
                 method: 'POST',
                 data: {
-                    title: quoteTitle,
-                    content: quoteContent,
-                    // meta: quoteSource,
-                    // meta: quoteURL,
+                    title: $quoteTitle,
+                    content: $quoteContent,
+                    _qod_quote_source: $quoteSource,
+                    _qod_quote_source_url: $quoteURL,
                 },
                 beforeSend: function(xhr){
                     xhr.setRequestHeader( 'X-WP-NONCE', quotesondev_vars.nonce )
@@ -88,9 +88,9 @@
 
             })
 
-            .done( function(response){
-                console.log(response);
+            .done( function(){
                 $submit.empty();
+                // $submit.slideUp();
                 $submit.append( '<h3>Thanks, your submission was recieved!</h3>' );
             } )
 
