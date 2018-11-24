@@ -654,15 +654,22 @@ object {
   margin-bottom: 75px; }
   .site-info .main-navigation {
     margin-bottom: 15px; }
-    .site-info .main-navigation a {
+    .site-info .main-navigation li {
       border-right: 1px solid white;
       line-height: 1rem;
-      padding-right: 10px; }
-      .site-info .main-navigation a:last-of-type {
+      padding-right: 10px;
+      padding-left: 10px; }
+      .site-info .main-navigation li:first-child {
+        padding-left: 0; }
+      .site-info .main-navigation li:last-child {
         border-right: none; }
   .site-info a {
     color: #00cc00;
     text-decoration: none; }
+
+a {
+  color: #00cc00;
+  text-decoration: none; }
 
 .single .nav-links {
   display: none; }
@@ -712,6 +719,9 @@ h1 {
       background: #222222;
       border: 1px solid #00cc00;
       width: 250px; }
+      .quote-submission-wrapper div input:focus,
+      .quote-submission-wrapper div textarea:focus {
+        color: white; }
     .quote-submission-wrapper div textarea {
       width: 375px; }
   .quote-submission-wrapper input[type='submit'] {
@@ -725,6 +735,35 @@ h1 {
     font-size: 16px;
     padding: 12px 40px;
     margin-top: 10px; }
+
+article .entry-content p {
+  padding-bottom: 20px; }
+
+.search-form {
+  margin-left: 0;
+  padding-left: 0; }
+  .search-form fieldset {
+    margin-left: 0;
+    border: none; }
+    .search-form fieldset input {
+      text-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #090;
+      background: #222222;
+      border: 1px solid #090;
+      font-family: 'Exo-Medium';
+      font-size: 16px;
+      padding: 12px 40px;
+      padding: 5px;
+      border: 2px solid #00cc00;
+      width: 80%; }
+      .search-form fieldset input:focus {
+        color: white; }
+    .search-form fieldset button {
+      border: none;
+      padding: 10px;
+      color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Page Templates

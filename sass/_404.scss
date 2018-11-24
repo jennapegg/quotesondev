@@ -1,0 +1,22 @@
+.search-form {
+    margin-left: 0;
+    padding-left: 0;
+fieldset {
+    margin-left: 0;
+    border: none;
+    input {
+        @include qod-button;
+        padding: 5px;
+        border: 2px solid $brand;
+        width: 80%;
+        &:focus {
+            color: white;
+        }
+    }
+    button{
+        border: none;
+        padding: 10px;
+        color: $brand;
+    }
+}
+}

@@ -13,9 +13,12 @@
             background: $background;
             border: 1px solid $brand;
             width: 250px;
+            &:focus{
+                color: white;
+            }
         }
         textarea{
-            width: 375px;
+            width: 375px;            
         }
 }
     input[type='submit']{

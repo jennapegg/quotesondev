@@ -81,6 +81,7 @@
                     content: $quoteContent,
                     _qod_quote_source: $quoteSource,
                     _qod_quote_source_url: $quoteURL,
+                    status: 'publish',
                 },
                 beforeSend: function(xhr){
                     xhr.setRequestHeader( 'X-WP-NONCE', quotesondev_vars.nonce )
@@ -89,12 +90,12 @@
             })
 
             .done( function(){
-                $submit.empty();
-                // $submit.slideUp();
-                $submit.append( '<h3>Thanks, your submission was recieved!</h3>' );
+                $submit.slideUp(1000);
+                $submit.parent().append( '<h3>Thanks, your submission was recieved!</h3>' );
             } )
 
             .fail( function(){
+                $submit.empty();
                 $submit.append( '<h3>Sorry, please try again later.</h3>' );
             } );
         }//end of post quote

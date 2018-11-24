@@ -46,11 +46,15 @@
     margin-bottom: 75px;
     .main-navigation {
         margin-bottom: 15px;
-        a {
+        li {
             border-right: 1px solid white;
             line-height: 1rem;
             padding-right: 10px;
-            &:last-of-type {
+            padding-left: 10px;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
                 border-right: none;
             }
         }
@@ -61,4 +65,9 @@
         color: $brand;
         text-decoration: none;
     }
+}
+
+a {
+    color: $brand;
+    text-decoration: none;
 }
