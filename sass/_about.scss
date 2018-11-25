@@ -1,7 +1,13 @@
-article {
+.post-206 {
     .entry-content{
+        @include tablet {
+            margin: 0;
+        }
         p {
             padding-bottom: 20px;
+            @include tablet {
+                font-size: 1rem;
+            }
         }
     }
 }

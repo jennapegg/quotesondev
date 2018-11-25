@@ -8,16 +8,33 @@
 @mixin qod-button {
 	text-shadow: none;
         box-shadow: none;
-        color: $button;
+        color: $brand;
         background: $background;
-        border: 1px solid $button;
+        border: 1px solid $brand;
         font-family: 'Exo-Medium';
         font-size: 16px;
         padding: 12px 40px;
+        &:visited {
+        color: $visited;
+        border: 1px solid $visited;
+        }
+}
+
+@mixin qod-tablet-button {
+        font-size: 20px;
+        padding: 12px 45px;
+        border: 2px solid $brand;
+
 }
 
 @mixin tablet {
 	@media(min-width: $tablet-width) {
 		@content;
 	}
+}
+
+@mixin desktop {
+        @media(min-width: $desktop-width) {
+                @content;
+        }
 }

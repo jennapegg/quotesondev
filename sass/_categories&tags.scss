@@ -1,0 +1,9 @@
+.tag,
+.category {
+        article {
+        border-bottom: 1px dotted white;
+        &:first-of-type {
+        border-top: 1px dotted white;
+        }
+        }
+}

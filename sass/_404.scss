@@ -1,14 +1,25 @@
+.error404{
+    h1 {
+        margin: 0;
+    }
+    p {
+        font-size: 1rem;
+    }
 .search-form {
     margin-left: 0;
     padding-left: 0;
 fieldset {
     margin-left: 0;
     border: none;
+    padding: 0;
+    font-family: 'Exo-Light';
     input {
         @include qod-button;
         padding: 5px;
         border: 2px solid $brand;
-        width: 80%;
+        width: 250px;
+        font-size: 1.3rem;
+        // height: 40px;
         &:focus {
             color: white;
         }
@@ -18,5 +29,6 @@ fieldset {
         padding: 10px;
         color: $brand;
     }
+}
 }
 }

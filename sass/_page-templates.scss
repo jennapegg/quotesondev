@@ -5,6 +5,11 @@ body {
     background: $background;
     color: white;
     margin-left: 10px;
+    @include tablet {
+        margin-left: 20px;
+    }
+    @include desktop {
+    }
 }
 
 

@@ -1,5 +1,8 @@
 .quote-submission-wrapper {
     width: 400px;
+    @include tablet {
+        width: 750px;
+    }
     div {
         display: flex;
         flex-direction: column;
@@ -13,12 +16,21 @@
             background: $background;
             border: 1px solid $brand;
             width: 250px;
+            @include tablet {
+                width: 400px;
+                border: 2px solid $brand;
+                height: 40px;
+            }
             &:focus{
                 color: white;
             }
         }
         textarea{
             width: 375px;            
+            @include tablet {
+                width: 90%;
+                height: 100px;
+            }
         }
 }
     input[type='submit']{
