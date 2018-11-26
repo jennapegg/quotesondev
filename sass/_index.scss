@@ -1,5 +1,8 @@
 .site-header {
     margin-top: 50px;
+    @include desktop {
+    text-align: center;
+    }
     @include tablet {
         margin-top: 65px;
     }
@@ -8,15 +11,41 @@
         @include tablet {
             width: 500px;
         }
+        @include desktop {
+            width: 675px;
+        }
     }
 }
 
 
 .site-main {
+    i {
+        display: none;
+    }
+    @include desktop{
+        display: flex;
+        .quote-div {
+            width: 60%;
+        }
+        i {
+            display: block;
+            font-size: 110px;
+            color: $brand;
+            margin-top: 50px;
+            margin-left: 5%;
+            &:first-of-type {
+                margin: 0 5%;
+                margin-top: 50px;
+            }
+        }
+    }
     button {
         @include qod-button;
         @include tablet {
             @include qod-tablet-button;
+        }
+        @include desktop {
+            margin-left: 40%;
         }
         }
     }
@@ -25,23 +54,46 @@
     width: 90%;
     font-family: 'Exo-Light';
     margin-bottom: 90px;
+    @include desktop {
+        width: 100%;
+        &:before {
+            background: url('../../images/quote-left-solid');
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
     
     p {
         font-size: 20px;
         
     }
     .entry-content {
+        @include desktop {
+            width: 100%;
+        }
         p {
           padding: 0;
         margin: 0;  
         @include tablet {
             font-size: 28px;
         }
+        @include desktop {
+            font-size: 40px;
+            margin-top: 40px;
+        }
         }
        
         
     }
     .entry-meta {
+        @include desktop {
+            width: 100%;
+            text-align: left;
+        } 
         p {
             display: inline-block;
         }
@@ -50,7 +102,8 @@
         text-decoration: none;
         font-family: 'Exo-Light-Italic';
         font-size: 20px;
-    }   
+    }  
+    
     }
     
 }
@@ -59,6 +112,10 @@
     margin-bottom: 75px;
     @include tablet {
         display: flex;
+    }
+    @include desktop {
+        justify-content: flex-end;
+        margin-right: 10%;
     }
     .main-navigation {
         margin-bottom: 15px;

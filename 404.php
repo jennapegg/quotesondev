@@ -11,6 +11,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<i class="fas fa-quote-left"></i>
+	<div class="quote-div">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -23,7 +25,8 @@ get_header(); ?>
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
+			</div>
+		<i class="fas fa-quote-right"></i>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

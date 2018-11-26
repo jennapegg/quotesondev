@@ -9,6 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+        <i class="fas fa-quote-left"></i>
+	<div class="quote-div">
 
 			<section class="quote-submission">
             <header class="entry-header">
@@ -56,7 +58,8 @@ get_header(); ?>
             ?>
             
             </section>
-
+            </div>
+		<i class="fas fa-quote-right"></i>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

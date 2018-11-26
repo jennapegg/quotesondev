@@ -619,6 +619,9 @@ object {
 
 .site-header {
   margin-top: 50px; }
+  @media (min-width: 1080px) {
+    .site-header {
+      text-align: center; } }
   @media (min-width: 600px) {
     .site-header {
       margin-top: 65px; } }
@@ -627,6 +630,29 @@ object {
     @media (min-width: 600px) {
       .site-header img {
         width: 500px; } }
+    @media (min-width: 1080px) {
+      .site-header img {
+        width: 675px; } }
+
+.site-main i {
+  display: none; }
+
+@media (min-width: 1080px) {
+  .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-main .quote-div {
+      width: 60%; }
+    .site-main i {
+      display: block;
+      font-size: 110px;
+      color: #00cc00;
+      margin-top: 50px;
+      margin-left: 5%; }
+      .site-main i:first-of-type {
+        margin: 0 5%;
+        margin-top: 50px; } }
 
 .site-main button {
   text-shadow: none;
@@ -646,19 +672,49 @@ object {
       font-size: 20px;
       padding: 12px 45px;
       border: 2px solid #00cc00; } }
+  @media (min-width: 1080px) {
+    .site-main button {
+      margin-left: 40%; } }
 
 .site-content {
   width: 90%;
   font-family: 'Exo-Light';
   margin-bottom: 90px; }
+  @media (min-width: 1080px) {
+    .site-content {
+      width: 100%; }
+      .site-content:before {
+        background: url("../../images/quote-left-solid"); }
+      .site-content article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .site-content p {
     font-size: 20px; }
+  @media (min-width: 1080px) {
+    .site-content .entry-content {
+      width: 100%; } }
   .site-content .entry-content p {
     padding: 0;
     margin: 0; }
     @media (min-width: 600px) {
       .site-content .entry-content p {
         font-size: 28px; } }
+    @media (min-width: 1080px) {
+      .site-content .entry-content p {
+        font-size: 40px;
+        margin-top: 40px; } }
+  @media (min-width: 1080px) {
+    .site-content .entry-meta {
+      width: 100%;
+      text-align: left; } }
   .site-content .entry-meta p {
     display: inline-block; }
   .site-content .entry-meta a {
@@ -675,6 +731,12 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+  @media (min-width: 1080px) {
+    .site-info {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-right: 10%; } }
   .site-info .main-navigation {
     margin-bottom: 15px; }
     @media (min-width: 600px) {
