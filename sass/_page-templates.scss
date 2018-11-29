@@ -3,17 +3,9 @@
 --------------------------------------------------------------*/
 body {
     background: $background;
-    color: white;
+    color: $text;
     margin-left: 10px;
     @include tablet {
         margin-left: 20px;
     }
-    @include desktop {
-    }
 }
-
-
-
-/* All Archives Page */
-
-/* Submit a Quote Page */

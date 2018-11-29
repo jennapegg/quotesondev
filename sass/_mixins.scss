@@ -5,6 +5,8 @@
 	margin-right: auto;
 }
 
+//style mixins
+
 @mixin qod-button {
 	text-shadow: none;
         box-shadow: none;
@@ -26,6 +28,20 @@
         border: 2px solid $brand;
 
 }
+
+@mixin link {
+        color: $brand;
+        text-decoration: none;
+        font-family: 'Exo-Light-Italic';
+        &:hover {
+                color: $visited;
+            }
+            &:visited {
+                color: $brand;
+            }
+}
+
+//media query mixins
 
 @mixin tablet {
 	@media(min-width: $tablet-width) {

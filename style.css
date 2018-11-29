@@ -1,9 +1,9 @@
 /*!
 Theme Name: quotesondev
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: Theme for the Quotes on Dev project, forked from Underscores.
+Author: Jenna Pegg
+Author URI: https://github.com/jennapegg/quotesondev
+Description: Theme for the Quotes on Dev project, originally forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,6 +37,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## All Archives Page
 	## Submit a Quote Page
+	## Index Page
+	## Single
+	##	about
+	## 404
+	## Categories and Tags
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -723,6 +728,10 @@ object {
     text-decoration: none;
     font-family: 'Exo-Light-Italic';
     font-size: 20px; }
+    .site-content .entry-meta a:hover {
+      color: #090; }
+    .site-content .entry-meta a:visited {
+      color: #00cc00; }
 
 .site-info {
   font-family: 'Exo-Light';
@@ -761,11 +770,17 @@ object {
             border-right: 1px solid white; } }
   .site-info a {
     color: #00cc00;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Exo-Light-Italic'; }
+    .site-info a:hover {
+      color: #090; }
+    .site-info a:visited {
+      color: #00cc00; }
 
 a {
   color: #00cc00;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Exo-Light-Italic'; }
   a:hover {
     color: #090; }
   a:visited {
@@ -800,7 +815,16 @@ a {
     .category-archives ul li a,
     .tag-archives ul li a {
       color: #00cc00;
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: 'Exo-Light-Italic'; }
+      .post-archives ul li a:hover,
+      .category-archives ul li a:hover,
+      .tag-archives ul li a:hover {
+        color: #090; }
+      .post-archives ul li a:visited,
+      .category-archives ul li a:visited,
+      .tag-archives ul li a:visited {
+        color: #00cc00; }
 
 h1 {
   margin: 40px 0; }
@@ -839,7 +863,7 @@ h1 {
           height: 40px; } }
       .quote-submission-wrapper div input:focus,
       .quote-submission-wrapper div textarea:focus {
-        color: white; }
+        color: #fff; }
     .quote-submission-wrapper div textarea {
       width: 375px; }
       @media (min-width: 600px) {
@@ -903,7 +927,7 @@ h1 {
         color: #090;
         border: 1px solid #090; }
       .error404 .search-form fieldset input:focus {
-        color: white; }
+        color: #fff; }
     .error404 .search-form fieldset button {
       border: none;
       padding: 10px;
@@ -921,11 +945,8 @@ h1 {
 --------------------------------------------------------------*/
 body {
   background: #222222;
-  color: white;
+  color: #fff;
   margin-left: 10px; }
   @media (min-width: 600px) {
     body {
       margin-left: 20px; } }
-
-/* All Archives Page */
-/* Submit a Quote Page */

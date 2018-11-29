@@ -15,8 +15,7 @@
                 line-height: 2.4rem;
             }
             a{
-                color: $brand;
-                text-decoration: none;
+                @include link;
             } 
         }
     }
