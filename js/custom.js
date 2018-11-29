@@ -11,7 +11,6 @@
 
         $button.on('click', function (event) {
             event.preventDefault();
-            //ajaxrequest
             getQuote();
         })//end of ajax function
 
@@ -25,7 +24,6 @@
             })
 
                 .done(function (data) {
-                    //figure out the post slug
                     history.pushState(null, null, quotesondev_vars.home_url + '/' + data[0].slug);
 
                     $content.empty();
@@ -60,15 +58,12 @@
             window.location.replace(lastPage);
         });
 
-
-        //submit the form and create a new quote post 
         $submit.on('submit', function (event) {
             event.preventDefault();
             postQuote();
         });
 
         function postQuote() {
-            //get values of your form input
             const $quoteTitle = $('#quote-author').val();
             const $quoteContent = $('#quote-content').val();
             const $quoteSource = $('#quote-source').val();
