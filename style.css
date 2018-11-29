@@ -632,7 +632,7 @@ object {
         width: 500px; } }
     @media (min-width: 1080px) {
       .site-header img {
-        width: 675px; } }
+        width: 700px; } }
 
 .site-main i {
   display: none; }
@@ -641,18 +641,19 @@ object {
   .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .site-main .quote-div {
       width: 60%; }
     .site-main i {
       display: block;
       font-size: 110px;
       color: #00cc00;
-      margin-top: 50px;
-      margin-left: 5%; }
+      margin-top: 50px; }
       .site-main i:first-of-type {
-        margin: 0 5%;
-        margin-top: 50px; } }
+        margin-right: 5%; } }
 
 .site-main button {
   text-shadow: none;
@@ -765,6 +766,10 @@ object {
 a {
   color: #00cc00;
   text-decoration: none; }
+  a:hover {
+    color: #090; }
+  a:visited {
+    color: #00cc00; }
 
 .single .nav-links {
   display: none; }
@@ -789,7 +794,7 @@ a {
       .post-archives ul li,
       .category-archives ul li,
       .tag-archives ul li {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
         line-height: 2.4rem; } }
     .post-archives ul li a,
     .category-archives ul li a,
@@ -799,6 +804,9 @@ a {
 
 h1 {
   margin: 40px 0; }
+
+.tag-archives a {
+  font-size: 1.25rem !important; }
 
 .quote-submission-wrapper {
   width: 400px; }

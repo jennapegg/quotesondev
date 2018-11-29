@@ -11,7 +11,7 @@
             padding-right: 20px;
             line-height: 2rem;
             @include tablet {
-                font-size: 1.25rem;
+                font-size: 1.25rem !important;
                 line-height: 2.4rem;
             }
             a{
@@ -22,8 +22,13 @@
     }
 }
 
-
-
 h1 {
     margin: 40px 0;
+}
+
+
+.tag-archives {
+    a {
+            font-size: 1.25rem !important;
+    }
 }

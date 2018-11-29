@@ -12,7 +12,7 @@
             width: 500px;
         }
         @include desktop {
-            width: 675px;
+            width: 700px;
         }
     }
 }
@@ -24,6 +24,7 @@
     }
     @include desktop{
         display: flex;
+        justify-content: center;
         .quote-div {
             width: 60%;
         }
@@ -32,10 +33,9 @@
             font-size: 110px;
             color: $brand;
             margin-top: 50px;
-            margin-left: 5%;
             &:first-of-type {
-                margin: 0 5%;
-                margin-top: 50px;
+                margin-right: 5%;
+                // margin-top: 50px;
             }
         }
     }
@@ -151,4 +151,10 @@
 a {
     color: $brand;
     text-decoration: none;
+    &:hover {
+        color: $visited;
+    }
+    &:visited {
+        color: $brand;
+    }
 }
